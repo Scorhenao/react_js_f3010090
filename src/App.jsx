@@ -1,14 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Usuarios from './components/usuarios'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import Usuarios from "./components/UserList";
 
 function App() {
-
-  return (
-    <Usuarios/>
-  )
+  return <Usuarios />;
 }
 
-export default App
+export default App;

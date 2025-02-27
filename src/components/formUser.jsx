@@ -1,23 +1,23 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 export const FormUser = ({insertData}) => {
 
-    const [email, setemail] = useState()
-    const [password, setpassword] = useState()
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
 
-    const guardar = (e) => {
+    const save = (e) => {
         e.preventDefault()
         insertData({email, password})
     }
 
     return (
         <div>formUser
-            <form onSubmit={guardar} action="">
-                <label>Email</label>
-                <input onChange={(e) => setemail(e.target.value)} type="text" />
-                <label>Password</label>
-                <input onChange={(e) => setpassword(e.target.value)} type="text" />
-                <input type='submit' value="Guardar" />
+            <form onSubmit={save} action="">
+                <label htmlFor="Email">Email</label>
+                <input onChange={(e) => setEmail(e.target.value)} type="text" />
+                <label htmlFor="Password">Password</label>
+                <input onChange={(e) => setPassword(e.target.value)} type="text" />
+                <input type='submit' value="save" />
             </form>
         </div>
     )

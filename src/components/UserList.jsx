@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import './estilecomponents.css'
+import { useState } from 'react'
+import './styleComponent.css'
 import { FormUser } from './formUser'
 
-const Bienvenida = () => {
+export const UserList = () => {
 
   const [dataUses, setDataUsers] = useState([])
   const insertData = (data) => {
@@ -30,5 +30,3 @@ const Bienvenida = () => {
     </>
   )
 }
-
-export default Bienvenida
