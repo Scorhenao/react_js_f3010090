@@ -1,8 +1,6 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import UsersList from './components/usuarios'
+import {UsersList} from './components/UsersList'
 import { FormUser } from './components/formUser'
 
 function App() {
@@ -15,7 +13,6 @@ function App() {
 
 
   return (
-    <>
       <div className="container p-5">
         <div className="row">
           <div className="col-4 p-4">
@@ -26,7 +23,6 @@ function App() {
           </div>
         </div>
       </div>
-    </>
   )
 }
 
